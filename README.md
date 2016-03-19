@@ -10,3 +10,8 @@ AngularJS is used as the fronteend and has a two way connection with the databas
 
 ### Add initial data to fixtures
 ### Add csrf tokening for rest api
+
+
+Superuser
+Admin
+PhillyDemHack2016
