@@ -21,10 +21,10 @@ class CampaignFinance(models.Model):
     EmployerCity = models.CharField(max_length=140)
     EmployerState = models.CharField(max_length=140)
     EmployerZip = models.CharField(max_length=140)
-    Date = models.CharField(max_length=140)
+    Date = models.DateField()
     Amount = models.CharField(max_length=140)
     Description = models.CharField(max_length=140)
-    Amended	= models.CharField(max_length=140)
+    Amended = models.CharField(max_length=140)
     SubDate = models.DateField()
     FiledBy = models.CharField(max_length=140)
 
