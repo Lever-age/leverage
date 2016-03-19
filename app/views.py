@@ -1,11 +1,18 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
+from django.contrib.auth import authenticate, login
+from django.views.decorators.csrf import csrf_protect, ensure_csrf_cookie
 from app.models import CampaignFinance
 from rest_framework import viewsets
 from app.serializers import UserSerializer, GroupSerializer, CampaignFinanceSerializer
 
 
+@csrf_protect
+@ensure_csrf_cookie
 def index(request):
+    user = authenticate(username='bob', password='bob')
+    if user is not None:
+        login(request, user)
     return render(request, 'app/index.html')
 
 
