@@ -1,6 +1,7 @@
 # Read all the CSVs and load them into the brand new DB.
 
 library(RPostgreSQL)
+library(DBI)
 
 # Get all the data files
 dataDir <- "../data"
@@ -20,6 +21,6 @@ csvData <- do.call(rbind, csvDataList)
 # Connect to the DB and put data there.
 # Note: This is the wrong DB.
 con <- dbConnect(dbDriver("PostgreSQL"), dbname = "demhack2016",
-                 host = "127.0.0.1", port = 5432,
+                 host = "campaign-finance.phl.io", port = 5432,
                  user = "demhack2016", password = "sense label hidden truth")
 dbWriteTable(con, name = "all_transactions", csvData, row.names = FALSE)
