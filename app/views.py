@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
+from app.models import CampaignFinance
 from rest_framework import viewsets
-from app.serializers import UserSerializer, GroupSerializer
+from app.serializers import UserSerializer, GroupSerializer, CampaignFinanceSerializer
 
 
 def index(request):
@@ -22,3 +23,11 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+
+class CampaignFinanceViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows campaign finance data to be viewed.
+    """
+    queryset = CampaignFinance.objects.all()
+    serializer_class = CampaignFinanceSerializer
