@@ -79,9 +79,13 @@ WSGI_APPLICATION = 'PhillyDemHack.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'demhack2016',
+        'NAME': 'demhack2016',
+        'PASSWORD': 'sense label hidden truth',
+        'HOST': 'campaign-finance.phl.io',
+        'PORT': '5432',
+    },
 }
 
 

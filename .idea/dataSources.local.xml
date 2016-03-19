@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - demhack2016@campaign-finance.phl.io" uuid="be6f0f86-7da3-4e1d-9f16-2aab0568e501">
+      <secret-storage>master_key</secret-storage>
+      <user-name>demhack2016</user-name>
+      <schema-pattern>demhack2016.*</schema-pattern>
+      <default-schemas>demhack2016.public</default-schemas>
+    </data-source>
+    <data-source name="Sqlite (Xerial) - identifier.sqlite" uuid="599e4622-57ed-4053-ac29-b596ea95948d">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+    </data-source>
+  </component>
+</project>
