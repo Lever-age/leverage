@@ -82,8 +82,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'demhack2016',
         'USER': 'demhack2016',
-        'PASSWORD': 'mypassword',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'sense label hidden truth',
+        'HOST': 'campaign-finance.phl.io',
         'PORT': '5432',
     }
 }
