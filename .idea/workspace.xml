@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7168528-9b12-4c27-bcc2-c10fcaaf4861" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/adeba.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/cleaner.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2007ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2008ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2009ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2010ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2011ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2012ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2013ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2014ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/2015ytd.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/Candidates and Committees.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/data/Explorer.Transactions.2013.YTD.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/donorFeatures.R" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/preprocess/HOWTO_connectToDB.R" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/preprocess/cleanupcol_FilerName.R" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/preprocess/fix2013.R" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataAnalysis/preprocess/loadDataToDB.R" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2007ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2009ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2011ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2012ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2014ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2015ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2008ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2010ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/2013ytd.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/Candidates and Committees.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/Explorer.Transactions.2013.YTD.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/donorFeatures.R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/preprocess/HOWTO_connectToDB.R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/preprocess/cleanupcol_FilerName.R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/preprocess/fix2013.R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data_set/preprocess/loadDataToDB.R" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
     </list>
     <list id="5ae52ded-6dc2-4ade-84a3-81b991ba0ab1" name="Revert: Add security to CampaignFinance API and Changed db connection (cdf760829a76736b43f0a678b107dcc9ef6fca46)" comment="" />
     <ignored path="PhillyDemHack.iws" />
@@ -157,7 +152,7 @@
       <file leaf-file-name="cleaner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32016632">
+            <state vertical-scroll-proportion="0.8525755">
               <caret line="31" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="16" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -652,18 +647,26 @@
       <option name="number" value="Default" />
       <updated>1458414594517</updated>
     </task>
+    <task id="LOCAL-00001" summary="data cleansing">
+      <created>1458470509743</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1458470509743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5021552" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Serial Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4205186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4205186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22435175" sideWeight="0.65247846" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26902464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21221864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -711,6 +714,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="data cleansing" />
+    <option name="LAST_COMMIT_MESSAGE" value="data cleansing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1024,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32016632">
+        <state vertical-scroll-proportion="0.8525755">
           <caret line="31" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="16" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
