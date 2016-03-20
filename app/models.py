@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from data import cleaner
+#from data import cleaner
 
 
 class CampaignFinance(models.Model):

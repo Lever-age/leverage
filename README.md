@@ -11,14 +11,14 @@ AngularJS is used as the fronteend and has a two way connection with the databas
  Add initial data to fixtures
  Add csrf tokening for rest api
  Add more front end stuff: Angular controllers, directives, factories and services
- Add permissions in serializers
+
 
 
 Superuser
 Admin
 PhillyDemHack2016
 
-##On Boarding
+##Contributing
 
 Thanks for your interest in helping with ______________.
 Here are 3 simple steps you can take to get up to speed.  
