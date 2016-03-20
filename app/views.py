@@ -10,7 +10,7 @@ from app.serializers import UserSerializer, GroupSerializer, CampaignFinanceSeri
 @csrf_protect
 @ensure_csrf_cookie
 def index(request):
-    user = authenticate(username='bob', password='bob')
+    user = authenticate(username='Admin', password='PhillyDemHack2016')
     if user is not None:
         login(request, user)
     return render(request, 'app/index.html')
