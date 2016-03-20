@@ -22,3 +22,5 @@ PhillyDemHack2016
 
 Thanks for your interest in helping with ______________.
 Here are 3 simple steps you can take to get up to speed.
+1.) [Wiki](https://github.com/BayoAdejare/PhillyDemHack/wiki)
+
