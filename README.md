@@ -8,8 +8,10 @@ AngularJS is used as the fronteend and has a two way connection with the databas
 
 ##To Do
 
-### Add initial data to fixtures
-### Add csrf tokening for rest api
+ Add initial data to fixtures
+ Add csrf tokening for rest api
+ Add more front end stuff: Angular controllers, directives, factories and services
+ Add permissions in serializers
 
 
 Superuser

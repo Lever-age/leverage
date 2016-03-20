@@ -7,6 +7,7 @@ from app import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'campaignfinance', views.CampaignFinanceViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
