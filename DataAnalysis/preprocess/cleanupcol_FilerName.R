@@ -16,8 +16,32 @@ lookup <- lookup[!duplicated(lookup[,c('FilerNameNoPunctSpaces')]),]
 colnames(lookup)[colnames(lookup)=="FilerName"] <- "FilerNameUnified"
 # merge the data and the lookup table
 newdata2015 <- inner_join(data2015, lookup, by = "FilerNameNoPunctSpaces")
-# clean up the helper column
-newdata2015$FilerNameNoPunctSpaces <- NULL
-# replace the FilerName column
-newdata2015$FilerName <- NULL
-colnames(newdata2015)[colnames(newdata2015)=="FilerNameUnified"] <- "FilerName"
+# # clean up the helper column
+# newdata2015$FilerNameNoPunctSpaces <- NULL
+# # replace the FilerName column
+# newdata2015$FilerName <- NULL
+# colnames(newdata2015)[colnames(newdata2015)=="FilerNameUnified"] <- "FilerName"
+
+
+# Match original FilerName to Candidate -----------------------------------
+
+library(dplyr)
+
+candidateCSV <- read.csv("../data/Candidates and Committees.csv",
+                         stringsAsFactors = FALSE)
+candidateInfo <- inner_join(newdata2015, candidateCSV, by = "FilerNameUnified") %>%
+  select(FilerName, Candidate, Position) %>%
+  distinct()
+
+
+# Put this into the DB ----------------------------------------------------
+
+library(RPostgreSQL)
+
+con <- dbConnect(dbDriver("PostgreSQL"), dbname = "demhack2016",
+                 host = "campaign-finance.phl.io", port = 5432,
+                 user = "demhack2016", password = "sense label hidden truth")
+
+dbWriteTable(con, "filer_candidate", candidateInfo, 
+             row.names = FALSE)
+
