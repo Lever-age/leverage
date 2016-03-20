@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -9,15 +10,15 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="{% static 'bower_components/html5-boilerplate/dist/css/normalize.css' %}"/>
+  <link rel="stylesheet" href="{% static 'bower_components/html5-boilerplate/dist/css/main.css' %}"/>
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
   <ul class="menu">
-    <li><a href="#/view1">Campaign Finance</a></li>
-    <li><a href="#/view2">view2</a></li>
+    <li><a href="{{ STATIC_URL }}/view1">Campaign Finance</a></li>
+    <li><a href="{{ STATIC_URL }}/view2">view2</a></li>
   </ul>
 
   <!--[if lt IE 7]>
@@ -33,11 +34,22 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+  <script src="{{ STATIC_URL }}/app.js"></script>
+  <script src="{{ STATIC_URL }}/view1/view1.js"></script>
+  <script src="{{ STATIC_URL }}/view2/view2.js"></script>
+  <script src="{{ STATIC_URL }}/js/components/version/version.js"></script>
+  <script src="{{ STATIC_URL }}/js/components/version/version-directive.js"></script>
+  <script src="{{ STATIC_URL }}/js/components/version/interpolate-filter.js"></script>
+
+<script type="text/javascript">
+    // Allows access to current user id in angular controller.
+    angular
+            .module('myApp.services')
+            .factory('AuthUser', function(){
+                return{
+                    id: "{{ user.id|default:'' }}";
+                }
+            });
+</script>
 </body>
 </html>
