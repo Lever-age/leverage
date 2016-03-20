@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from data import cleaner
 
 
 class CampaignFinance(models.Model):
@@ -33,3 +34,8 @@ class CampaignFinance(models.Model):
 
     def __unicode__(self):
         return self.text
+
+
+class TopDoners(models.Model):
+    topcontrib = cleaner.group_top100()
+    print topcontrib.top100

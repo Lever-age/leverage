@@ -17,3 +17,10 @@ AngularJS is used as the fronteend and has a two way connection with the databas
 Superuser
 Admin
 PhillyDemHack2016
+
+##On Boarding
+
+Thanks for your interest in helping with ______________.
+Here are 3 simple steps you can take to get up to speed.
+1.) [Wiki](https://github.com/BayoAdejare/PhillyDemHack/wiki)
+
