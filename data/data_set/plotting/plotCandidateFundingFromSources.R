@@ -24,7 +24,7 @@ financeData <- tbl(db, "candidate_sources") %>%
   mutate_each(funs(factor), Candidate, DonorType, Position)
 
 
-# Plot --------------------------------------------------------------------
+# Plot function -----------------------------------------------------------
 
 ggCandidatePlot <- function(candidateData, ylim) {
   # Figure out if this will be in thousands or millions
@@ -64,7 +64,7 @@ ggCandidatePlot <- function(candidateData, ylim) {
     xlab("") + 
     theme(axis.title.y=element_text(size=25)) +
     theme(axis.text=element_text(size=20)) +
-    coord_fixed(ratio = 0.4) +
+    #coord_fixed(ratio = 0.4) +
     theme(legend.position="none") +
     theme(panel.grid=element_blank()) +
     theme(panel.background=element_rect(fill = "white"))
@@ -72,13 +72,31 @@ ggCandidatePlot <- function(candidateData, ylim) {
   return(arrangeGrob(ggDonut, ggBar, ncol = 1,
                      top = textGrob(paste0(candidateData$Candidate[1], 
                                            "\n(", candidateData$Position[1], ")"),
-                                    gp=gpar(fontsize=35))))
+                                    gp=gpar(fontsize=25))))
 }
 
-# ylim will be chosen for each Position
-gg <- ggCandidatePlot(filter(financeData, Candidate == "Jim Kenney"), ylim = 5e6)
-ggsave("test.png", gg,
-       width = 5,
-       height = 10)
+
+# Plots for every candidate -----------------------------------------------
+
+for (positionIdx in seq_len(nlevels(financeData$Position))) {
+  positionData <- filter(financeData, 
+                         Position == levels(financeData$Position)[positionIdx])
+  
+  # Pretty y axis limits are ugly code
+  maxAmount <- max(positionData$Amount)
+  maxAmountDigits <- floor(log10(maxAmount))
+  positionYlim <- ceiling(maxAmount/10^maxAmountDigits)*10^maxAmountDigits
+  
+  positionCandidates <- unique(positionData$Candidate)
+  for (candidateIdx in seq_along(positionCandidates)) {
+    candidateData <- filter(positionData, 
+                            Candidate == positionCandidates[candidateIdx])
+    gg <- ggCandidatePlot(candidateData, ylim = positionYlim)
+    ggsave(paste0("position", positionIdx, "candidate", candidateIdx, ".png"),
+           gg,
+           width = 5,
+           height = 10)
+  }
+}
 
 
