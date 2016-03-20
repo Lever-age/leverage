@@ -35,7 +35,8 @@ class CampaignFinance(models.Model):
     def __unicode__(self):
         return self.text
 
-
+'''
 class TopDoners(models.Model):
     topcontrib = cleaner.group_top100()
     print topcontrib.top100
+'''
