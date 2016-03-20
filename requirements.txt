@@ -1,4 +1,4 @@
 django==1.9.4
 djangorestframework==3.3.3
 psycopg2==2.6.1
-pandas==0.18.0
+#pandas==0.18.0
