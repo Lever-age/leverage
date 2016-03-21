@@ -23,7 +23,7 @@ class CampaignFinance(models.Model):
     EmployerState = models.CharField(max_length=140)
     EmployerZip = models.CharField(max_length=140)
     Date = models.DateField()
-    Amount = models.CharField(max_length=140)
+    Amount = models.DecimalField(max_digits=12, decimal_places=2)
     Description = models.CharField(max_length=140)
     Amended = models.CharField(max_length=140)
     SubDate = models.DateField()
