@@ -182,3 +182,4 @@ target/
 
 # Specific files
 settings.py
+dblogin.RData
