@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/BayoAdejare/PhillyDemHack.png?label=ready&title=Ready)](https://waffle.io/BayoAdejare/PhillyDemHack)
 # PhillyDemHack
 Code for Philly: Apps for Sustainability Democracy Hackathon
 
