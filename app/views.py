@@ -13,7 +13,7 @@ def index(request):
     user = authenticate(username='Admin', password='PhillyDemHack2016')
     if user is not None:
         login(request, user)
-    return render(request, 'app/index.html')
+    return render(request, 'app/positions.html')
 
 
 class UserViewSet(viewsets.ModelViewSet):
