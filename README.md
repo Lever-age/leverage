@@ -1,27 +1,29 @@
 [![Stories in Ready](https://badge.waffle.io/BayoAdejare/PhillyDemHack.png?label=ready&title=Ready)](https://waffle.io/BayoAdejare/PhillyDemHack)
-# PhillyDemHack
-Code for Philly: Apps for Sustainability Democracy Hackathon
+#Leverage: Philly Campaign Finance
 
-##Stack
+The goal of Leverage is to empower citizens of Philadelphia to use campaign finance data when making informed decisions about who they donate to, who they support, and who they vote for.
+
+The foundation of Leverage is the campaign finance data published by the City of Philadelphia. We will apply some machine learning techniques to the data to pull out trends and patterns. Finally, we add a layer of simple visualization on top of the analyzed data, allowing any citizen to consume and understand how candidates are funded.
+
+##Our Guiding Principles
+
+* Empower citizens to make informed decisions.
+* Don't single out individual donors; don't facilitate punitive actions.
+* Design visualizations so they can be consumed by anyone, including non-native English speakers and illiterate citizens.
+
+##Technology
 
 Uses Django web framework for the backend with a postgres production database (sqlite3 currently as development database). 
 AngularJS is used as the fronteend and has a two way connection with the database using a rest framework (Django rest framework).
 
-##To Do
+##Documentation
 
- Add initial data to fixtures
- Add csrf tokening for rest api
- Add more front end stuff: Angular controllers, directives, factories and services
-
-
-
-Superuser
-Admin
-PhillyDemHack2016
+We'll have some soon. We promise!
 
 ##Contributing
 
-Thanks for your interest in helping with ______________.
-Here are 3 simple steps you can take to get up to speed.  
-1.) [Wiki](https://github.com/BayoAdejare/PhillyDemHack/wiki)
+Leverage is still in its infancy. We have a great core team but are always looking for people who would like to contribute. Instructions on how to pitch in coming soon.
 
+##License
+
+Please see the [license](https://github.com/BayoAdejare/PhillyDemHack/blob/master/GNU%20GENERAL%20PUBLIC%20LICENSE) file.
