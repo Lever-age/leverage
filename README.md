@@ -26,4 +26,4 @@ Leverage is still in its infancy. We have a great core team but are always looki
 
 ## License
 
-Please see the [license](https://github.com/BayoAdejare/PhillyDemHack/blob/master/GNU%20GENERAL%20PUBLIC%20LICENSE) file.
+Please see the [license](https://github.com/BayoAdejare/PhillyDemHack/blob/master/GNU%20Affero%20General%20Public%20License) file.
