@@ -11,11 +11,12 @@ library(tidyr)
 # Get campaign donations from the DB --------------------------------------
 
 # Create a connection to the DB
+load("dblogin.RData")     # Brings in dbuser/dbpassword
 db <- src_postgres(dbname = "demhack2016", 
                    host = "campaign-finance.phl.io",
                    port = 5432,
-                   user = "demhack2016",
-                   password = "sense label hidden truth")
+                   user = dbuser,
+                   password = dbpassword)
 
 # Fetch all transactions
 allTransactions <- tbl(db, "all_transactions")

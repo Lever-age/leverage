@@ -41,9 +41,10 @@ candidateSources <- donorFeaturesClassified %>%
 
 # Put the amounts into the DB ---------------------------------------------
 
+load("dblogin.RData")     # Brings in dbuser/dbpassword
 con <- dbConnect(dbDriver("PostgreSQL"), dbname = "demhack2016",
                  host = "campaign-finance.phl.io", port = 5432,
-                 user = "demhack2016", password = "sense label hidden truth")
+                 user = dbuser, password = dbpassword)
 tableExists <- dbGetQuery(con, "SELECT EXISTS (
     SELECT 1 
     FROM   pg_catalog.pg_class c

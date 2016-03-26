@@ -5,15 +5,18 @@ library(grid)
 library(ggplot2)
 library(gridExtra)
 
+# Plots will either be displayed or saved
+saveCandidatePlots <- FALSE
 
 # Grab the data from the DB -----------------------------------------------
 
 # Create a connection to the DB
+load("dblogin.RData")     # Brings in dbuser/dbpassword
 db <- src_postgres(dbname = "demhack2016", 
                    host = "campaign-finance.phl.io",
                    port = 5432,
-                   user = "demhack2016",
-                   password = "sense label hidden truth")
+                   user = dbuser,
+                   password = dbpassword)
 
 # Join up the data and pull it into RAM
 #SELECT * FROM candidate_sources LEFT JOIN candidate_position USING ( "Candidate" );
@@ -92,10 +95,14 @@ for (positionIdx in seq_len(nlevels(financeData$Position))) {
     candidateData <- filter(positionData, 
                             Candidate == positionCandidates[candidateIdx])
     gg <- ggCandidatePlot(candidateData, ylim = positionYlim)
-    ggsave(paste0("position", positionIdx, "candidate", candidateIdx, ".png"),
-           gg,
-           width = 5,
-           height = 10)
+    if (saveCandidatePlots) {
+      ggsave(paste0("position", positionIdx, "candidate", candidateIdx, ".png"),
+             gg,
+             width = 5,
+             height = 10)
+    } else{
+      plot(gg)
+    }
   }
 }
 
