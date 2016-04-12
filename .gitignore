@@ -178,8 +178,11 @@ docs/_build/
 # PyBuilder
 target/
 
+# SQLite
+*.sqlite3
+
 # Created by .ignore support plugin (hsz.mobi)
 
 # Specific files
-settings.py
 dblogin.RData
+
