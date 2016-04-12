@@ -24,6 +24,30 @@ We'll have some soon. We promise!
 
 Leverage is still in its infancy. We have a great core team but are always looking for folks who want to contribute. Instructions [here](https://github.com/BayoAdejare/PhillyDemHack/blob/master/CONTRIBUTING.md).
 
+### Starting a development server
+
+First, create a virtualenv and install the package (this will install dependencies, too).
+
+```
+cd path/to/this/repo
+virtualenv env
+source ./env/bin/activate
+python setup.py develop
+```
+
+Now, you can create a database:
+
+```
+cd leverage
+python manage.py migrate --settings=settings.dev
+```
+
+Now start the dev server:
+
+```
+python manage.py runserver --settings=settings.dev
+```
+
 ## License
 
 Please see the [license](https://github.com/BayoAdejare/PhillyDemHack/blob/master/GNU%20Affero%20General%20Public%20License) file.
