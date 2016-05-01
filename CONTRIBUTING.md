@@ -29,7 +29,7 @@ Responsible for supporting the team, maintaining a cadence, and administering th
 
 Layer | Technology | Responsible Team
 ----- | ---------- | ----------------
-Source Repository | Git/Github | Project Admin/Support
+Source Repository | Git/GitHub | Project Admin/Support
 Data Analysis | R | Data Analysis
 Database | PostgreSQL | Data Analysis
 API/Middleware | Python/Django | Server Admin
