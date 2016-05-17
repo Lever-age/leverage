@@ -13,8 +13,7 @@ The foundation of Leverage is the campaign finance data published by the City of
 
 ## Technology
 
-Uses Django web framework for the backend with a postgres production database (sqlite3 currently as development database). 
-AngularJS is used as the fronteend and has a two way connection with the database using a rest framework (Django rest framework).
+Uses Django web framework for the backend with a postgres database. On the frontend, BackboneJS is used and communicates to the backend via Django Rest Framework.
 
 ## Documentation
 
