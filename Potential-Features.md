@@ -4,4 +4,7 @@ This document is meant to collate all of the features that we want to capture fo
 
 ## Feature List
 
-- 
+- Log in/Log out system.
+- Ability to save and remember canidates.
+- Ability to search and sort canidates based on what position they are in/running for.
+- Ability to view the total amount contributed during a campaign broken down by the two categories of campaign finance.
