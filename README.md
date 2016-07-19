@@ -3,7 +3,7 @@
 
 The goal of Leverage is to empower citizens of Philadelphia to use campaign finance data when making informed decisions about who they donate to, who they support, and who they vote for.
 
-The foundation of Leverage is the campaign finance data published by the City of Philadelphia. We will apply some machine learning techniques to the data to pull out trends and patterns. Finally, we add a layer of simple visualization on top of the analyzed data, allowing any citizen to consume and understand how candidates are funded.
+The foundation of Leverage is the campaign finance data published by the City of Philadelphia. We apply machine learning techniques to the data to pull out trends and patterns. Finally, we add a layer of simple visualization on top of the analyzed data, allowing any citizen to consume and understand how candidates are funded.
 
 ## Our Guiding Principles
 
