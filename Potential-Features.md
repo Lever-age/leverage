@@ -13,5 +13,5 @@ This document is meant to collate all of the features that we want to capture fo
 - Ability to see number of donations meeting qualifications set by user in the following areas (amount, donee zip code & date). 
 - Ability to set multiple qualifiers such as show donors from zip code (X), giving >200.00, from wk ending 12/1/16 - 12/15/16
 - Use of icons such as carton of milk to represent donations below $4.00, movie ticket for donations >$4.00 - 20.00, set of    tires >$500.00 etc.(universal icons that remove language barrier).
--Ability to use a ticker and hover over rolling total raised per candidate. Open source library of ticker module available     @(https://github.com/robinhood/ticker).
+- Ability to use a ticker and hover over rolling total raised per candidate. Open source library of ticker module available     @(https://github.com/robinhood/ticker).
 
