@@ -42,7 +42,11 @@ Also, pick a team that you'd like to contribute to and drop a quick email to the
 
 ## 4. Pick a task and do it
 If you've arrived here, you're ready to contribute!  
-Find an appropriate task in the **Ready for Work** lane of the [kanban board](https://waffle.io/Lever-age/Leverage) and assign it to yourself.  
+
+We'e got a different repo for each project workstream. Here are links to the respective kanban boards on waffle:
+* [API](https://waffle.io/Lever-age/api)
+* [Frontend](https://waffle.io/Lever-age/frontend)
+
 If you have any questions, reach out the team on [Slack](https://codeforphilly.slack.com/messages/leverage/). We're always happy to lend a hand.
 
 Happy contributing!:sparkles:
