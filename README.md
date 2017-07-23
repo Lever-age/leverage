@@ -22,7 +22,7 @@ We'll have some soon. We promise!
 
 ## Contributing
 
-Leverage is still in its infancy. We have a great core team but are always looking for folks who want to contribute. Instructions [here](https://github.com/Lever-age/leverage/blob/master/CONTRIBUTING.md).
+Leverage started at the [Code for Philly](https://www.codeforphilly.org) [DemHack 2016](https://codeforphilly.org/blog/apps_for_philly_democracy--hackathon-2016). The group has evolved over time, as most volunteer projects do. We have a great core team but are always looking for folks who want to contribute. Communication is done mostly through Slack and [Code for Philly hack nights](https://www.meetup.com/Code-for-Philly/). Instructions to contribute can be found [here](https://github.com/Lever-age/leverage/blob/master/CONTRIBUTING.md).
 
 ### Starting a development server
 
